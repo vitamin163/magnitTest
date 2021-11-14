@@ -2,4 +2,4 @@
 
 Основные используемые технологии: React/Redux/formik.
 
-Опубликовано на domninvk-magnit-test.surge.sh
+Опубликовано на https://domninvk-magnit-test.surge.sh/
