@@ -2,14 +2,28 @@
   "name": "magnit-test",
   "version": "0.1.0",
   "private": true,
+  "author": "Vitaliy Domnin",
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.24.0",
+    "classnames": "^2.3.1",
+    "formik": "^2.2.9",
+    "http-proxy-middleware": "^2.0.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.6",
+    "prettier": "^2.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
+    "redux": "^4.1.2",
+    "redux-actions": "^2.6.5",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.0",
+    "web-vitals": "^1.1.2",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -20,8 +34,12 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
-    ]
+      "react-app/jest",
+      "airbnb-base"
+    ],
+    "rules": {
+      "import/prefer-default-export": "off"
+    }
   },
   "browserslist": {
     "production": [
@@ -34,5 +52,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1"
   }
 }

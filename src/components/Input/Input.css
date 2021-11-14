@@ -1,0 +1,11 @@
+.base-input {
+  padding: 8px 16px;
+}
+
+.base-input:hover {
+  padding: 8px 16px;
+}
+
+.base-input__error {
+  color: red;
+}

@@ -1,0 +1,30 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border: 2px solid gray;
+  background-color: green;
+  cursor: pointer;
+  height: 38px;
+  min-width: 180px;
+  will-change: background-color;
+  transition: background-color 200ms linear;
+}
+
+.button:hover {
+  background-color: greenyellow;
+}
+
+.button:active {
+  background-color: gray;
+}
+
+.button_is-disabled {
+  cursor: unset;
+  opacity: 0.6;
+}
+
+.button_is-disabled:hover {
+  background-color: green;
+}
